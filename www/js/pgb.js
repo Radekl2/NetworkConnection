@@ -10,7 +10,7 @@ function showNetworkInfo() {
 	var wifi = cordova.plugins.wifiinfo;
 	wifi.getHostname(function success(info){
     console.log(info); //
-    
+    /*
     {
         hostname: 'ipad-of-user.local',
  
@@ -45,9 +45,9 @@ function showNetworkInfo() {
             }
         }
     }
-    
+    */
 });
 
-navigator.notification.alert(info);
+navigator.notification.alert(JSON.stringify(info));
 }
 
