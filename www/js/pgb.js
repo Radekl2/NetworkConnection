@@ -8,10 +8,12 @@ function onDeviceReady() {
 
 function showNetworkInfo() {
 	var wifi = cordova.plugins.wifiinfo;
-	info = wifi.getHostname(function success(hostname));
+	wifi.getHostname(function success(hostname){
+    console.log(hostname); // ipad-of-user.local.
+});
 	
 	//info =  'Hi, I am your smartphone :-)';
 
-navigator.notification.alert(info);
+navigator.notification.alert(hostname);
 }
 
