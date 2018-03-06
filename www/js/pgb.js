@@ -8,12 +8,46 @@ function onDeviceReady() {
 
 function showNetworkInfo() {
 	var wifi = cordova.plugins.wifiinfo;
-	wifi.getHostname(function success(hostname){
-    console.log(hostname); // ipad-of-user.local.
+	wifi.getHostname(function success(info){
+    console.log(info); //
+    
+    {
+        hostname: 'ipad-of-user.local',
+ 
+        // ConnectionInfo
+        connection: {
+            bssid (string)
+            hidden (boolean): Whether the network is hidden or not
+            ip (string)
+            speed (int): Uplink speed
+            mac (string)
+            rssi (int)
+            ssid (string)
+            frequency (int): WiFi band, Lollipop (API 26+) only
+        },
+ 
+        // DhcpInfo
+        dhcp: {
+            dns1 (string)
+            dns2 (string)
+            gateway (string)
+            ip (string)
+            lease (int): Lifespan of DHCP lease
+            netmask (string)
+            server (string)
+        },
+ 
+        // list of IPv4 and IPv6 interfaces
+        interfaces: {
+            wlan0: {
+                ipv4Addresses[],
+                ipv6Addresses[]
+            }
+        }
+    }
+    
 });
-	
-	//info =  'Hi, I am your smartphone :-)';
 
-navigator.notification.alert(hostname);
+navigator.notification.alert(info);
 }
 
