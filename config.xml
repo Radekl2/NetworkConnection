@@ -4,7 +4,7 @@
 		id          = "myfirstapp"
         version     = "1.0.0" >
 
-    <name>Business Card</name>
+    <name>Network</name>
     <description>My first mobile app</description>
     <author href="http://mypersonalwebsite.com" email="johnbrown@gmail.com">
 		Johny Brawo
@@ -15,6 +15,7 @@
 	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
 	<plugin name="checkinternet" spec="1.0.0" />
 	<plugin name="cordova-plugin-wifiinfo" spec="0.0.1" />
+	<plugin name="com.danishin.wifiwizard" spec="0.2.11" />
 	
 	
 
