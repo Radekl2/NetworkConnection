@@ -7,7 +7,7 @@ function onDeviceReady() {
 }
 
 function showNetworkInfo() {
-	var info = WifiWizard.isWifiEnabled;
+	info = WifiWizard.isWifiEnabled;
 
 navigator.notification.alert(info);
 }
