@@ -25,7 +25,7 @@ function showNetworkInfo() {
     //alert('Connection type: ' + states[networkState]);
 	
 	
-		document.getElementById("con").innerHTML = states[networkState];
+		document.getElementById('con').innerHTML = 'mhm' + states[networkState];
 	
 		
 		
