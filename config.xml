@@ -11,12 +11,8 @@
 	</author>
 	<platform name="android" />
 	
-	<plugin name="cordova-plugin-device" spec="2.0.1" />
-	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
-	<plugin name="checkinternet" spec="1.0.0" />
-	<plugin name="cordova-plugin-wifiinfo" spec="0.0.1" />
-	<plugin name="com.danishin.wifiwizard" spec="0.2.11" />
-	
+	<plugin name="cordova-plugin-network-information" spec="2.0.1" />
+
 	
 
 </widget>
