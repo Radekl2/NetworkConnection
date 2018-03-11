@@ -3,8 +3,6 @@ function init() {
 }
 
 function onDeviceReady() {
-	//navigator.notification.beep(1);
-	//document.getElementById("fooHolder").innerHTML = "abc";
 	showNetworkInfo();
 }
 
@@ -21,21 +19,6 @@ function showNetworkInfo() {
     states[Connection.CELL]     = 'Cell generic connection';
     states[Connection.NONE]     = 'No network connection';
  
-	//info = 'Connection type: ' + states[networkState];
-    //alert('Connection type: ' + states[networkState]);
-	
-	
-		document.getElementById('con').innerHTML = 'mhm' + states[networkState];
-	
-		
-		
-	
- 
-//alert('Connection type: ' +status[networkState];
-	
-	
-	//info = states[networkState];
-
-//navigator.notification.alert(info);
+	document.getElementById('con').innerHTML = 'You are connected to: ' + states[networkState];
 }
 
