@@ -1,5 +1,6 @@
 function init() {
 	document.addEventListener("deviceready",onDeviceReady, false);
+	showNetworkInfo();
 }
 
 function onDeviceReady() {
@@ -19,14 +20,23 @@ function showNetworkInfo() {
     states[Connection.CELL]     = 'Cell generic connection';
     states[Connection.NONE]     = 'No network connection';
  
-    alert('Connection type: ' + states[networkState]);
+	//info = 'Connection type: ' + states[networkState];
+    //alert('Connection type: ' + states[networkState]);
+	
+	info = abc;
+		
+		document.getElementById("fooHolder").innerHTML = info.toString();
+	
+	
 
+//document.getElementById("fooHolder").innerHTML = info.toString();
+	//return info;
  
-
+//alert('Connection type: ' +status[networkState];
 	
 	
-	info = states[networkState];
+	//info = states[networkState];
 
-navigator.notification.alert(info);
+//navigator.notification.alert(info);
 }
 
