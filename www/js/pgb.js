@@ -5,6 +5,7 @@ function init() {
 
 function onDeviceReady() {
 	navigator.notification.beep(1);
+	showNetworkInfo();
 }
 
 function showNetworkInfo() {
@@ -20,13 +21,15 @@ function showNetworkInfo() {
     states[Connection.CELL]     = 'Cell generic connection';
     states[Connection.NONE]     = 'No network connection';
  
-	//info = 'Connection type: ' + states[networkState];
+	info = 'Connection type: ' + states[networkState];
     //alert('Connection type: ' + states[networkState]);
 	
-	info = abc;
+	
+		document.getElementById("fooHolder").innerHTML = info;
+	
 		
 		
-	return info;
+	
  
 //alert('Connection type: ' +status[networkState];
 	
