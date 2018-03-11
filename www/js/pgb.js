@@ -25,12 +25,8 @@ function showNetworkInfo() {
 	
 	info = abc;
 		
-		document.getElementById("fooHolder").innerHTML = info.toString();
-	
-	
-
-//document.getElementById("fooHolder").innerHTML = info.toString();
-	//return info;
+		
+	return info;
  
 //alert('Connection type: ' +status[networkState];
 	
