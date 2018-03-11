@@ -1,11 +1,13 @@
 function init() {
 	document.addEventListener("deviceready",onDeviceReady, false);
-	showNetworkInfo();
+	//showNetworkInfo();
+	document.getElementById("fooHolder").innerHTML = "abc";
 }
 
 function onDeviceReady() {
 	navigator.notification.beep(1);
-	showNetworkInfo();
+	document.getElementById("fooHolder").innerHTML = "abc";
+	//showNetworkInfo();
 }
 
 function showNetworkInfo() {
