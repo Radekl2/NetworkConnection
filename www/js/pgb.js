@@ -1,9 +1,10 @@
 function init() {
 	document.addEventListener("deviceready",onDeviceReady, false);
+    showNetworkInfo();
 }
 
 function onDeviceReady() {
-	showNetworkInfo();
+	
 }
 
 function showNetworkInfo() {
@@ -18,6 +19,11 @@ function showNetworkInfo() {
     states[Connection.CELL_4G]  = 'Cell 4G connection';
     states[Connection.CELL]     = 'Cell generic connection';
     states[Connection.NONE]     = 'No network connection';
+
+    if (states[networkState]=='No network connection')
+    {
+        alert("Brak wifi");
+    }
  
 	document.getElementById('con').innerHTML = 'You are connected to: ' + states[networkState];
 }
