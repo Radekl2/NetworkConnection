@@ -12,7 +12,8 @@
 	<platform name="android" />
 	
 	<plugin name="cordova-plugin-network-information" spec="2.0.1" />
-
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
 	
 
 </widget>
