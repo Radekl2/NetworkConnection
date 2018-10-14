@@ -12,7 +12,7 @@
 	<platform name="android" />
 	
 	<plugin name="cordova-plugin-network-information" spec="2.0.1" />
-
+<br>
 	
 
 </widget>
